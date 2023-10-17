@@ -1,0 +1,76 @@
+@import './main.scss';
+
+aside {
+    height: 100vh;
+    max-width: 250px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 98% 2%;
+    position: fixed;
+    // background-color: $gris;
+    .content-aside {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100vh;
+        .ctn-logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            margin-top: 40px;
+            img {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+            }
+        }
+        .links {
+            // display: flex;
+            // justify-content: center;
+            // flex-direction: column;
+            li {
+                height: 100px;
+                display: grid;
+                place-items: center left;
+                cursor: pointer;
+                transition: all .7s ease;
+                &:hover {
+                    background-color: $blanco;
+                    h2 {
+                        color: $negro;
+                    }
+                }
+                h2 {
+                    margin-left: 15px;
+                    background: $transparente;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    color: $blanco;
+                }
+            }
+        }
+        .social-networks {
+            display: grid;
+            place-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            li {
+                figure {
+                    width: 60px;
+                    height: 60px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .hr-vertical {
+        background-color: $blanco;
+        width: 2px;
+        height: 90vh;
+        margin: 50px 0;
+    }
+}

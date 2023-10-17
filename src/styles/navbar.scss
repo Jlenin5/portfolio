@@ -1,0 +1,35 @@
+@import './main.scss';
+
+nav {
+    // position: fixed;
+    position: absolute;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    height: 12vh;
+    background-color: $gris;
+    .ctn-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 1000px;
+        width: 100%;
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            height: 50px;
+            width: 250px;
+            border-radius: 30px;
+            background-color: $transparente;
+            border: 1px solid $blanco;
+            color: $blanco;
+            cursor: pointer;
+            font-size: 1.05em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

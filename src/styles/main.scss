@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$gris: #ccc;
+$gris-1: #808080;
+$negro: #000;
+$blanco: #fff;
+$azul: #053aac;
+$azul-1: #f3f7ff;
+$rojo: #bb1616;
+$verde: #13C246;
+$verde-1: #d6f7e0;
+$transparente: transparent;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Plus Jakarta Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    background-color: $negro;
+    color: $blanco;
+}
+
+.ctn-portfolio {
+    position: relative;
+    // display: grid;
+    // grid-template-columns: 15% 85%;
+    aside {
+        z-index: 5;
+    }
+    .right {
+        // position: relative;
+        // display: flex;
+        max-width: 1200px;
+        width: 100%;
+        background-color: $gris;
+        margin-left: 15%;
+    }
+}
